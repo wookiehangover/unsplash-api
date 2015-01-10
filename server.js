@@ -48,4 +48,6 @@ server.route({
   }
 });
 
-server.start();
+server.start(function() {
+  console.log('server started at '+ server.info.uri);
+});
